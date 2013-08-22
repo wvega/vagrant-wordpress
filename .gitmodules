@@ -1,0 +1,63 @@
+[submodule "chef/cookbooks/database"]
+	path = chef/cookbooks/database
+	url = https://github.com/opscode-cookbooks/database.git
+[submodule "chef/cookbooks/apache2"]
+	path = chef/cookbooks/apache2
+	url = https://github.com/opscode-cookbooks/apache2.git
+[submodule "chef/cookbooks/apt"]
+	path = chef/cookbooks/apt
+	url = https://github.com/opscode-cookbooks/apt.git
+[submodule "chef/cookbooks/aws"]
+	path = chef/cookbooks/aws
+	url = https://github.com/opscode-cookbooks/aws.git
+[submodule "chef/cookbooks/build-essential"]
+	path = chef/cookbooks/build-essential
+	url = https://github.com/opscode-cookbooks/build-essential.git
+[submodule "chef/cookbooks/dmg"]
+	path = chef/cookbooks/dmg
+	url = https://github.com/opscode-cookbooks/dmg.git
+[submodule "chef/cookbooks/git"]
+	path = chef/cookbooks/git
+	url = https://github.com/opscode-cookbooks/git.git
+[submodule "chef/cookbooks/iptables"]
+	path = chef/cookbooks/iptables
+	url = https://github.com/opscode-cookbooks/iptables.git
+[submodule "chef/cookbooks/java"]
+	path = chef/cookbooks/java
+	url = https://github.com/opscode-cookbooks/java.git
+[submodule "chef/cookbooks/mysql"]
+	path = chef/cookbooks/mysql
+	url = https://github.com/opscode-cookbooks/mysql.git
+[submodule "chef/cookbooks/php"]
+	path = chef/cookbooks/php
+	url = https://github.com/opscode-cookbooks/php.git
+[submodule "chef/cookbooks/postgresql"]
+	path = chef/cookbooks/postgresql
+	url = https://github.com/opscode-cookbooks/postgresql.git
+[submodule "chef/cookbooks/runit"]
+	path = chef/cookbooks/runit
+	url = https://github.com/opscode-cookbooks/runit.git
+[submodule "chef/cookbooks/subversion"]
+	path = chef/cookbooks/subversion
+	url = https://github.com/opscode-cookbooks/subversion.git
+[submodule "chef/cookbooks/windows"]
+	path = chef/cookbooks/windows
+	url = https://github.com/opscode-cookbooks/windows.git
+[submodule "chef/cookbooks/wordpress"]
+	path = chef/cookbooks/wordpress
+	url = https://github.com/opscode-cookbooks/wordpress.git
+[submodule "chef/cookbooks/xfs"]
+	path = chef/cookbooks/xfs
+	url = https://github.com/opscode-cookbooks/xfs.git
+[submodule "chef/cookbooks/xml"]
+	path = chef/cookbooks/xml
+	url = https://github.com/opscode-cookbooks/xml.git
+[submodule "chef/cookbooks/yum"]
+	path = chef/cookbooks/yum
+	url = https://github.com/opscode-cookbooks/yum.git
+[submodule "chef/cookbooks/openssl"]
+	path = chef/cookbooks/openssl
+	url = https://github.com/opscode-cookbooks/openssl.git
+[submodule "chef/cookbooks/chef_handler"]
+	path = chef/cookbooks/chef_handler
+	url = https://github.com/opscode-cookbooks/chef_handler.git

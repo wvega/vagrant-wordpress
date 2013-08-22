@@ -1,0 +1,9 @@
+{
+    "name": "wordpress",
+    "chef_type": "role",
+    "json_class": "Chef::Role",
+    "description": "The base role for WordPress servers",
+    "run_list": [
+        "recipe[development]"
+    ]
+}

@@ -1,0 +1,8 @@
+[Unit]
+Description=Selenium Server
+
+[Service]
+ExecStart=/bin/java -jar <%= File.join(node['selenium']['server']['install_path'], "selenium-server-standalone-#{node['selenium']['server']['version']}.jar") %>
+
+[Install]
+Alias=selenium-server.service
