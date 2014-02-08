@@ -141,7 +141,7 @@ fi
 # Install script to sync plugin files on guest server
 DEST=`dirname $DOCUMENT_ROOT`
 
-cat <<EOF > /usr/local/bin/sync-plugin-files
+cat <<EOF > /usr/local/bin/sync-wp-files
 #!/bin/bash
 sudo rsync -avtk $INSTALL_DIR $DEST --exclude=tests --exclude=wp-content/uploads
 EOF
