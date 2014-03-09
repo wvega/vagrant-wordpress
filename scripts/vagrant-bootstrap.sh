@@ -17,15 +17,15 @@ yum install -y perl-Digest-SHA
 
 # install WP-CLI
 if [ ! -f /usr/bin/wp ]; then
-    wget --quiet https://raw.github.com/wp-cli/builds/gh-pages/phar/wp-cli.phar
-    chmod a+x wp-cli.phar
-    mv wp-cli.phar /usr/bin/wp
+    wget --quiet https://github.com/wp-cli/wp-cli/releases/download/v0.14.0/wp-cli-0.14.0.phar
+    chmod a+x wp-cli-0.14.0.phar
+    mv wp-cli-0.14.0.phar /usr/bin/wpvagr
 fi
 
 # Configure PHP
 sed -i s/'display_errors = Off'/'display_errors = On'/ /etc/php.ini
 sed -i s/'html_errors = Off'/'html_errors = On'/ /etc/php.ini
-sed -i s/'upload_max_filesize = 2M'/'upload_max_filesize = 10M'/ /etc/php.ini
+sed -i s/'upload_max_filesize = 2M'/'upload_max_filesize = 20M'/ /etc/php.ini
 
 # Configure MySQL
 systemctl enable mysqld.service
@@ -48,6 +48,7 @@ cat <<VHOST > /etc/httpd/conf.d/wordpress.conf
   DocumentRoot $DOCUMENT_ROOT
 
   <Directory $DOCUMENT_ROOT>
+    EnableSendfile Off
     Options FollowSymLinks
     AllowOverride FileInfo Options
     Order allow,deny
@@ -146,8 +147,8 @@ cat <<EOF > /usr/local/bin/sync-wp-files
 sudo rsync -avtk $INSTALL_DIR $DEST --exclude=tests --exclude=wp-content/uploads
 EOF
 
-chown vagrant:vagrant /usr/local/bin/sync-plugin-files
-chmod 0755 /usr/local/bin/sync-plugin-files
+chown vagrant:vagrant /usr/local/bin/sync-wp-files
+chmod 0755 /usr/local/bin/sync-wp-files
 
 # Configure firewall
 firewall-cmd --zone=public --add-service=http
